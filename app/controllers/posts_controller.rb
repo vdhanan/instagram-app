@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   end
 
   def index
-    @post = Post.all
+    @posts = Post.all
   end
 
   def show
@@ -15,17 +15,16 @@ class PostsController < ApplicationController
     @post = Post.new(permit_post)
     if @post.save
       flash[:success] = "Success!"
-      redirect_to post_path(@post)
+      redirect_to(@post)
     else
       flash[:error] = @post.errors.full_messages
       redirect_to new_post_path
-
     end
   end
 
   private
-    def permit_post
-      params.require(:post).permit(:image, :description)
-    end
 
+    def permit_post
+        params.require(:post).permit(:image, :description)
+    end
 end

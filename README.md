@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Ruby Version: 2.4
 
-Things you may want to cover:
+## Description
+This project was created based on a youtube tutorial (https://www.youtube.com/watch?v=MpFO4Zr0EPE) titled "Make an instagram like site in under 30 minutes! (Ruby on Rails)" as an assignment for the course CS121 at Harvey Mudd College.
 
-* Ruby version
+## Screenshots
 
-* System dependencies
+### Register
 
-* Configuration
+To register, click on the register tab in the navigation bar,
 
-* Database creation
+and enter the necessary information.
 
-* Database initialization
+### Login/Logout
+To login, click on the login tab in the navigation bar and enter the necessary information.
 
-* How to run the test suite
+To logout, click on the logout tab and confirm that you want to logout.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Adding a New Post
+To add a new post, click New Post, 
+attach an image, 
+and write a description.
+When you press submit, you should see a message signalling success!
